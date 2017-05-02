@@ -1,0 +1,19 @@
+.row
+  .col-md-6
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title
+          | Rank:
+          = @rank.name
+      .panel-body
+        p
+          strong Score from:
+          = @rank.score_from
+        p
+          strong Score to:
+          = @rank.score_to
+        p
+          strong Name:
+          = @rank.name
+        = link_to 'Edit', edit_rank_path(@rank), class: 'btn btn-default'
+        = link_to 'Back', ranks_path, class: 'btn btn-default'

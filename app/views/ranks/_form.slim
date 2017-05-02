@@ -1,0 +1,11 @@
+- if flash[:alert]
+  .alert.alert-danger
+    = flash[:alert]
+
+= simple_form_for(@rank, html: { class: 'form-horizontal' }) do |f|
+  = f.input :score_from
+  = f.input :score_to
+  = f.input :name
+  = f.button :submit
+
+hr

@@ -1,0 +1,9 @@
+.row
+  .col-md-6
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title Edit Rank
+      .panel-body
+        = render 'form'
+        = link_to 'Show', @rank, class: 'btn btn-primary'
+        = link_to 'Back', ranks_path, class: 'btn btn-default'
