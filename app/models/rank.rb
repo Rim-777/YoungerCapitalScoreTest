@@ -12,7 +12,7 @@ class Rank < ActiveRecord::Base
   end
 
   def score_is_valid?
-    !!(score_from < score_to)
+    score_from < score_to
   end
 
   def score_is_overlapping?
